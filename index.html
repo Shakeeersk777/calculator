@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <form name="calc">
+            <div id="console">
+                <input name="Answer" id="output-display">
+            </div>
+            <div name="calc">
+                <div id="row1">
+                    <input type="button" value="AC" class="row-buttons" id="clear" onclick="calc.Answer.value=' '">
+                    <input type="button" value="DEL" class="row-buttons" id="delete" onclick="calc.Answer.value=' '">
+                    <input type="button" value="+" class="row-buttons" id="add" onclick="calc.Answer.value+='+'">
+                    <input type="button" value="%" class="row-buttons" id="modulus" onclick="calc.Answer.value+='%'">
+                </div>
+                <div id="row2">
+                    <input type="button" value="7" class="row-buttons" id="seven" onclick="calc.Answer.value+='7'">
+                    <input type="button" value="8" class="row-buttons" id="eight" onclick="calc.Answer.value+='8'">
+                    <input type="button" value="9"  class="row-buttons" id="nine" onclick="calc.Answer.value+='9'">
+                    <input type="button" value="/"  class="row-buttons" id="divison" onclick="calc.Answer.value+='/'">
+                </div>
+                <div id="row3">
+                    <input type="button" value="4" class="row-buttons" id="four" onclick="calc.Answer.value+='4'">
+                    <input type="button" value="5" class="row-buttons" id="five" onclick="calc.Answer.value+='5'">
+                    <input type="button" value="6"  class="row-buttons" id="six" onclick="calc.Answer.value+='6'">
+                    <input type="button" value="*"  class="row-buttons" id="astrick" onclick="calc.Answer.value+='*'">
+                </div>
+                <div id="row4">
+                    <input type="button" value="1" class="row-buttons" id="one" onclick="calc.Answer.value+='1'">
+                    <input type="button" value="2" class="row-buttons" id="two" onclick="calc.Answer.value+='2'">
+                    <input type="button" value="3"  class="row-buttons" id="three" onclick="calc.Answer.value+='3'">
+                    <input type="button" value="-"  class="row-buttons" id="subtraction" onclick="calc.Answer.value+='-'">
+                </div>
+                <div id="row5">
+                    <input type="button" value="." class="row-buttons" id="dot" onclick="calc.Answer.value+='.'">
+                    <input type="button" value="0" class="row-buttons" id="button-zero" onclick="calc.Answer.value+='0'">
+                    <input type="button" value="=" class="row-buttons" id="equal" onclick="calc.Answer.value=eval(calc.Answer.value)">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
